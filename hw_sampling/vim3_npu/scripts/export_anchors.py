@@ -43,12 +43,13 @@ def code_gen(anchors):
   print("")
   print("#endif")
   print("")
-  pass
 
 
 def main(_):
   if len(sys.argv) != 2:
-    print("Must specify an input graph file! Usage: %s [Graph PB file]" % (sys.argv[0]))
+    print(
+        f"Must specify an input graph file! Usage: {sys.argv[0]} [Graph PB file]"
+    )
 
   graph_file = sys.argv[1]
   with open(graph_file, 'rb') as f:
